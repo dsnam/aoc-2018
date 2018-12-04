@@ -1,4 +1,5 @@
 mod day_one;
+mod day_two;
 
 use std::env;
 use std::io::Error;
@@ -11,6 +12,7 @@ fn main() -> Result<(), Error> {
 
     match day.as_ref() {
         "1" => { day_one::run(filename)?; },
+        "2" => { day_two::run(filename)?; }
         _ => { println!("Invalid day"); },
     }
 
