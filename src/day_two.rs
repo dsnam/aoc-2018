@@ -73,7 +73,7 @@ fn part_two(vec: &Vec<String>) -> Result<(), Error> {
         }
     }
 
-    println!("{}", common_chars);
+    println!("Part two solution: {}", common_chars);
 
     Ok(())
 }

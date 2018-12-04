@@ -28,7 +28,7 @@ fn parse_file<R: Read>(io: R) -> Result<Vec<i64>, Error> {
 fn part_one(vec: &Vec<i64>) -> Result<(), Error> {
     let sum = vec.iter().fold(0, |a, &b| a + b);
 
-    println!("{}", sum);
+    println!("Part one solution: {}", sum);
     Ok(())
 }
 
@@ -47,6 +47,6 @@ fn part_two(vec: &Vec<i64>) -> Result<(), Error> {
         }
     }
 
-    println!("{}", curr_freq);
+    println!("Part two solution: {}", curr_freq);
     Ok(())
 }
